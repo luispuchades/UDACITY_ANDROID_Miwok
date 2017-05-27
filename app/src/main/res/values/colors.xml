@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Primary color of the app (shown in the app bar) -->
+    <!-- Primary color of the app (shown in the app bar)  Old #4A312A -->
     <color name="primary_color">#4A312A</color>
 
     <!-- Primary dark color of the app (shown in the status bar) -->
@@ -34,4 +34,6 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <color name="activity_text_color">#FFFFFF</color>
 </resources>

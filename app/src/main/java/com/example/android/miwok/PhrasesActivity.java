@@ -32,7 +32,7 @@ public class PhrasesActivity extends AppCompatActivity {
         //Create new WordAdapter Object that presents pair of words in the new defined layout
         //called list_item
         WordAdapter adapter =
-                new WordAdapter(this, words);
+                new WordAdapter(this, words, R.color.category_phrases);
 
         //Capture of ListView listview with ID list
         ListView listView = (ListView) findViewById(R.id.list);

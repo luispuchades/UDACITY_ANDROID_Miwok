@@ -18,7 +18,10 @@ public class Word {
     private String mMiwokTranslation;
 
     /** Image resource ID for the Word*/
-    private int mImageResourceID;
+    private int mImageResourceID = NO_IMAGE_PROVIDED;
+
+    /** Constant value that represents no image was provided for this word*/
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Create a new Word object.
@@ -30,8 +33,8 @@ public class Word {
      * Constructor
      */
     public Word(String defaultTranslation, String miwokTranslation) {
-        this.mDefaultTranslation = defaultTranslation;
-        this.mMiwokTranslation = miwokTranslation;
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
     }
 
     public Word(String defaultTranslation, String miwokTranslation, int imageResourceID){
@@ -62,4 +65,13 @@ public class Word {
     public int getImageResourceID() {
         return mImageResourceID;
     }
+
+    /**
+     * Returns whether or not there is an image for this word
+     */
+
+    public boolean hasImage(){
+        return mImageResourceID != NO_IMAGE_PROVIDED;
+    }
+
 }
