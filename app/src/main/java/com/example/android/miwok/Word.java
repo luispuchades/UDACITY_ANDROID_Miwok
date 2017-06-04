@@ -23,6 +23,9 @@ public class Word {
     /** Constant value that represents no image was provided for this word*/
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    /** Sounf resource ID for the Word*/
+    private int mAudioResourceID;
+
     /**
      * Create a new Word object.
      *
@@ -32,15 +35,17 @@ public class Word {
      *
      * Constructor
      */
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation, int audioResourceID) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+        mAudioResourceID = audioResourceID;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceID){
+    public Word(String defaultTranslation, String miwokTranslation, int imageResourceID, int audioResourceID){
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceID = imageResourceID;
+        mAudioResourceID = audioResourceID;
     }
 
 
@@ -60,7 +65,6 @@ public class Word {
 
     /**
      * Get the Image Resource ID
-     * @return
      */
     public int getImageResourceID() {
         return mImageResourceID;
@@ -72,6 +76,13 @@ public class Word {
 
     public boolean hasImage(){
         return mImageResourceID != NO_IMAGE_PROVIDED;
+    }
+
+    /**
+     * Get the Sound Resource ID
+     */
+    public int getAudioResourceID() {
+        return mAudioResourceID;
     }
 
 }
