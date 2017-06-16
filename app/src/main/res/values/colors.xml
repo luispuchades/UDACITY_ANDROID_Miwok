@@ -36,4 +36,7 @@
     <color name="category_phrases">#16AFCA</color>
 
     <color name="activity_text_color">#FFFFFF</color>
+
+    <color name="tabLayout_background">#4A312A</color>
+    <color name="tabLayout_text">#A8A19E</color>
 </resources>

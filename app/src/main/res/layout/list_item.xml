@@ -43,7 +43,6 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
             tools:text="one" />
-
     </LinearLayout>
 
     <ImageView
